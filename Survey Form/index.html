@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+<body>
+<h1 id="title">Music Survey</h1>
+<p id="description">Hello. Please answer this short survery. Thank you in advance!</p>
+
+<form id="survey-form" for="name" for="submit">
+  <label id="name-label" for="name">
+    What's your name?: 
+  <input type="text" id="name" required placeholder="John Smith"/>
+  </label>
+
+<label id="email-label" for="email">
+  What's your email?: 
+  <input type="email" id="email" required placeholder="jsmith21@gmail.com"/>
+</label>
+
+  <label id="number-label" for="number">
+    What's your age?:  
+  <input id="number" type="number" min="1" max="100" placeholder="21"/>
+  </label>
+
+ <label id="genres" for="dropdown">
+  What's the best genre of music?
+  <select id="dropdown">
+  <option>Rock</option>
+  <option>Hip Hop</option>
+  <option>Pop</option>
+  <option>Country</option>
+  </select>
+ </label>
+
+ <label id="checkbox"> Do you know how to play an instrument or sing?
+   <input  type="radio" name="experience" value="1"  /> Yes
+   <input type="radio" name="experience" value="2"/> No
+ </label>
+
+<fieldset>
+  <p>Please answer the following questions </p>
+  <input type="checkbox" value="1"/> I share music with friends
+        <input type="checkbox" value="2"/> I listen to music everyday
+        <input type="checkbox" value="3"/> I purchase physical copies of songs
+        <input type="checkbox" value="4"/> I use a music streaming service
+</fieldset>
+
+  <label for="bio">Are there any comments you'd like to add?:
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I love rock n' roll!..."></textarea>
+
+           <input type="submit" value="Submit" id="submit" />
+        </label>
+</form>
+  </body>

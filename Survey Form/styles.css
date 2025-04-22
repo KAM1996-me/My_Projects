@@ -1,0 +1,17 @@
+input[type="text"], input[type="email"], 
+input[type="number"],select {
+  padding: 10px;
+  display: block;
+  margin: 10px;
+}
+
+select {
+  margin-left: 50px;
+}
+
+input[type="radio"] {
+  display: inline;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+ 
